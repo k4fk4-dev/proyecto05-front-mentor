@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="output.css">
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="bg-Cream md:bg-Cream">
+  <section class="w-[375px] mx-auto bg-white mt-10 rounded-xl md:w-[600px] md:h-[445px] md:flex ">
+    <!-- imagen -->
+    <div class="md:w-1/2">
+      <div class="h-[240px] bg-no-repeat bg-cover rounded-t-xl bg-[url('../images/image-product-mobile.jpg')] md:bg-[url('../images/image-product-desktop.jpg')] md:h-[445px] md:w-[300px] md:bg-cover md:rounded-l-lg md:rounded-b-lg"></div>
+    </div>
+    <!-- informacion -->
+     <div class="h-[375px] pt-10 px-8 md:w-1/2">
+      <p class="font-Montserrat text-Darkgrayishblue uppercase tracking-[5px]">
+        Perfume
+      </p>
+      <h2 class="font-Fraunces font-bold text-3xl pt-3 md:py-4">
+        Gabrielle Essence Eau De Parfum
+      </h2>
+      <p class="font-Montserrat text-Darkgrayishblue pb-4">
+       A floral, solar and voluptuous interpretation composed by Olivier Polge,Perfumer-Creator for the House of CHANEL.
+      </p>
+      <div class="flex gap-2 items-center pb-4">
+       <p class="font-Fraunces font-bold text-Darkcyan text-3xl">$149.99</p>
+       <p class="text-Darkgrayishblue pl-2">$169.99</p>
+      </div>
+      <button class="bg-Darkcyan h-[50px] w-full rounded-lg hover:bg-green-950 ">
+        <div class="flex items-center place-content-center">
+          <img src="../images/icon-cart.svg" class="w-4 h-4 " alt="Icono">
+          <p class="ml-2 text-white font-bold ">Add to card</p>
+        </div>
+      </button>
+      
+     </div>
+     
+  </section>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Kafka</a>.
+  </div>
+</body>
+</html>
